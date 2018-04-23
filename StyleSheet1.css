@@ -1,0 +1,113 @@
+﻿@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+#animate-area {
+    width: 560px;
+    height: 400px;
+    background: url(images/bg-clouds.png) top repeat-x, linear-gradient(lightskyblue 30%, lightgreen, green) no-repeat center fixed;
+    animation: animatedBackground 40s linear infinite;
+}
+
+body {
+    margin-left: 43%;
+    margin-top: 3%;
+    font-family: 'Comic Sans MS';
+}
+
+#school {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 42px;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+#score {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#mathp {
+    border-radius: 5px;
+    border: 3px solid blue;
+    padding: 20px;
+    margin-right: 150px;
+}
+
+table.problem {
+    font-size: 32px;
+    text-align: left;
+    border-bottom: solid;
+    margin: 10px 0px 60px 70px;
+}
+
+#answer {
+    font-size: 34px;
+    text-align: left;
+    color: red;
+    margin: -50px 0px 30px 90px;
+}
+
+input[type=text], select {
+    font-family: 'Comic Sans MS';
+    font-size: 24px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    width: 45%;
+    text-align: right;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-family: 'Comic Sans MS';
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#demo {    
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: -30px;
+}
+
+#btnNext {
+    font-family: 'Comic Sans MS';
+    background-color: #4CAF50;
+    color: white;
+    font-size: 30px;
+    padding: 20px 150px 20px 150px;
+    border-radius: 8px;
+}
+
+#btnNext:hover {
+    background-color: #45a049;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

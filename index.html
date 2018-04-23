@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet1.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="JavaScript.js"></script>
+</head>
+<body onload="randomNum()" id="animate-area">
+    <!-- Title -->
+    <h1>Math Practice</h1>
+
+    <!-- Score -->
+    <div id="score">Correct Answers: 0</div>
+
+    <!-- School Pic -->
+    <div id="school"><image src="images/school.png" /></div>
+
+    <!-- Math Problem -->
+    <div id="mathp">
+    <table class="problem">
+    <tr>
+        <td></td>
+        <td id="num1" align="right"></td>
+    </tr>
+    <tr>
+        <td id="operator"></td>
+        <td id="num2" align="right"></td>
+    </tr>
+    </table>
+    
+
+    <!-- Correct Answer -->
+    <p id="answer" style="visibility:hidden;"></p>
+
+    <!-- User Anser -->
+    <form id="myForm" method="post" onsubmit="myFunction(); return false;">
+        <input type="text" id="userAnswer" name="userAnswer" placeholder="type answer" />
+        <input type="submit" value="Check" />
+    </form>
+    </div>
+    <!-- Answer Responose -->
+    <p id="demo"></p>
+
+    <!-- Next -->
+    <button id="btnNext" onclick="myClear()" style="visibility:hidden;">Next</button> 
+
+</body>
+</html>

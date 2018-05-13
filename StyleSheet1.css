@@ -11,7 +11,7 @@
 
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    body, #school, #mathp, table.problem {
+    #animate-area, body, #school, #mathp, table.problem {
         width: 40%;
     }
 }

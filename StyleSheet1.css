@@ -1,4 +1,22 @@
-﻿@keyframes animatedBackground {
+﻿@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    body, #school, #mathp, table.problem {
+        width: 40%;
+    }
+}
+
+@keyframes animatedBackground {
     from {
         background-position: 0 0;
     }
@@ -12,12 +30,14 @@
     width: 560px;
     height: 400px;
     background: url(images/bg-clouds.png) top repeat-x, linear-gradient(lightskyblue 30%, lightgreen, green) no-repeat center fixed;
+    background-size: initial, cover;
     animation: animatedBackground 40s linear infinite;
 }
 
 body {
-    margin-left: 43%;
-    margin-top: 3%;
+    margin: auto;
+    width: 50%;
+    padding-top: 40px;
     font-family: 'Comic Sans MS';
 }
 
@@ -25,6 +45,7 @@ body {
     position: absolute;
     right: 20px;
     bottom: 20px;
+    z-index: -1;
 }
 
 h1 {

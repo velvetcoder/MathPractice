@@ -39,14 +39,13 @@ function checkMath() {
         randomGoodString();
         document.getElementById("btnNext").style = "visibility:visible;";
         score++;
-        
+        document.getElementById("submit").disabled = true; //Disables submit button after correct answer
     } else {
         function randomBadString() {
             document.getElementById("demo").innerHTML = myBadArray[randBad];
         }
         randomBadString();
-        document.getElementById("answer").style = "visibility:hidden;";
-        
+        document.getElementById("answer").style = "visibility:hidden;";        
     }
     
     document.getElementById("score").innerHTML = "Correct Answers: " + score;
@@ -55,7 +54,7 @@ function checkMath() {
 
 function myFunction() {
     myVisible();
-    checkMath()
+    checkMath();    
 }
 
 function myClear() {
@@ -64,6 +63,7 @@ function myClear() {
     document.getElementById("btnNext").style = "visibility:hidden;";
     document.getElementById("answer").style = "visibility:hidden;";
     randomNum();
+    document.getElementById("submit").disabled = false; //Enables submit button after correct answer
 }
 
 

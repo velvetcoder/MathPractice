@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Practice</title>
+    <link href="StyleSheet1.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="JavaScriptM.js"></script>
+</head>
+<body onload="randomNum()" id="animate-area">
+    
+    <div class="container">
+    
+    <!-- Title -->
+    <header>
+        <h1>Math Practice</h1>
+        <button><a href="index.html">Addition/ Subtraction</a></button>
+        <button><a href="Multiplication.html">Multiplication</a></button>
+        <button><a href="Division.html">Division</a></button>
+    </header>
+
+    <!-- Score -->
+    <div id="score">Correct Answers: 0</div>
+
+    <!-- School Pic -->
+    <div id="school"><image src="images/school.png" style="width:100%;height:auto;" /></div>
+
+    <!-- Math Problem -->
+    <div id="mathp">
+    <table class="problem">
+    <tr>
+        <td></td>
+        <td id="num1" align="right"></td>
+    </tr>
+    <tr>
+        <td id="operator"></td>
+        <td id="num2" align="right"></td>
+    </tr>
+    </table>
+    
+
+    <!-- Correct Answer -->
+    <p id="answer" style="visibility:hidden;"></p>
+
+    <!-- User Anser -->
+    <form id="myForm" method="post" onsubmit="myFunction(); return false;">
+        <input type="text" id="userAnswer" name="userAnswer" placeholder="type answer" />
+        <input type="submit" id="submit" value="Check" />
+    </form>
+    </div>
+
+    <!-- Answer Responose -->
+    <p id="demo"></p>
+
+    <!-- Next -->
+    <button id="btnNext" onclick="myClear()" style="visibility:hidden;">Next</button> 
+    </div>
+</body>
+</html>
